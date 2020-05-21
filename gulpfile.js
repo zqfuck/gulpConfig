@@ -12,7 +12,7 @@ const uglify = require('gulp-uglify'); //js压缩
 const cleanCSS = require('gulp-clean-css'); //压缩css
 //var gulpIf = require('gulp-if');
 
-var del = require('del');
+var del = require('del'); //删除文件
 
 //var runSequence = require('run-sequence'); //组织任务执行顺序,未使用
 
