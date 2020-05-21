@@ -18,7 +18,7 @@ var del = require('del'); //删除文件
 
 //var rename = require('gulp-rename'); //重命名
 
-var watch = require('gulp-watch'); //监视
+var watch = require('gulp-watch'); //监视变化
 
 var minifyHtml = require("gulp-html-minify"); //压缩html
 
