@@ -1,0 +1,562 @@
+        .close{
+    		font-size:0.28rem;
+    		color:#fff;
+    		position:absolute;
+    		left:0.7rem;
+    	}
+    	.videoContainer{
+    		width:100%;
+            height:3.2rem;
+            background-size: 100% 100%;
+            position:relative;
+    	}
+    	.tablist{
+    		width:100%;
+    		display:flex;
+    		justify-content: space-around;
+    		height:0.8rem;
+    	}
+    	.tablist li{
+            font-size: 0.28rem;
+  			color:#a3acbe;
+			height:100%;
+			line-height:0.76rem;
+			flex-grow: 1;
+            text-align: center;
+            position: relative;
+        }
+        .tablist li div{
+            width:75%;
+            margin-left:14%;
+        }
+    	.tablist .active{
+            color:#4c5568;
+        }
+        .tablist .active div{
+            border-bottom:2px solid #d13243;
+        }
+        .chat,.content,.guest,.program{
+            width:100%;
+            height:100%;
+            position:relative;
+            /*overflow:hidden;*/
+        }
+        .content ul{
+           
+         }
+        .content ul li h3{
+            font-size: 0.28rem;
+            color:#4c5568;
+            float:left;
+            margin-bottom:0.3rem;
+        }
+        .content ul li .watch{
+            display:inline-block;
+            font-family: iconfont;
+            color:#d13243;
+            font-size:0.3rem;
+        }
+          .content ul li .like{
+            display:inline-block;
+            font-family: iconfont;
+            color:#d13243;
+            font-size:0.33rem;
+        }
+        .content ul li p{
+            font-size:0.24rem;
+            color:#4c5568;
+            line-height:0.5rem;
+        }
+        .content ul li p img{
+            width:100%;
+        }
+        .wraperper{
+            display:inline-block;
+            width:1.08rem;
+            height:0.37rem;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            line-height: 0.37rem;
+        }
+        .wraperper span{
+            font-size:0.23rem;
+            color:#4c5568;
+            vertical-align: 2px;
+            margin-left:0.1rem;
+        }
+        .content ul li{
+            padding-bottom:0.5rem;
+            padding-top:0.5rem;
+            background-color: #f5f5f5;
+            padding-left:0.2rem;
+            padding-right:0.2rem;
+            font-size:0.28rem;
+            color:#4c5568;
+        }
+        .content ul li .describe{
+            color:#4c5568;
+            font-size:0.24rem;
+        }
+        .content ul .introduction .introductionone h3{
+            font-size:0.28rem;
+            color:#4c5568;
+        }
+        .content ul .introduction .introductionone .watchwraper{
+            margin-right:0.1rem;
+        }
+        .blank{
+            width:calc(100% + 0.4rem);
+            margin-left:-0.2rem;
+            height:0.3rem;
+            background-color: #f5f5f5;
+            border-bottom:1px solid #e1e1e1;
+            border-top:1px solid #e1e1e1;
+        }
+        .promote{
+            padding-top:0.3rem;
+            background-color: #fff;
+            border-radius: 0.08rem;
+        }
+        .promote ul li{
+            background-color: #fff;
+            margin-left:0.25rem;
+            margin-right:0.25rem;
+            padding-top:0.3rem;
+            padding-bottom:0.3rem;
+            border-bottom:1px solid #eaebef;
+        }
+        .promote h2{
+            font-size: 0.28rem;
+            padding-left:0.4rem;
+            color:#4c5568;
+            padding-bottom:0.3rem;
+            border-bottom:1px solid #eaebef;
+            margin-left:0.25rem;
+            margin-right:0.25rem;
+            position: relative;
+        }
+        .promote h2 i{
+            position: absolute;
+            width:0.05rem;
+            height:0.28rem;
+            background-color: #d13243;
+            left:10px;
+            top:2px;
+        }
+        .promote .imview{
+            float:right;
+            display:block;
+            width:1.63rem;
+            height:0.73rem;
+            background:url('../img/imview.png') no-repeat 100% 100%;
+            background-size:100% 100%;
+            border-radius:0.1rem;
+            line-height:0.6rem;
+            color:white;
+            text-align:center;
+        }
+        .videoContainer{
+            height:calc(100% - 3.96rem);
+            width:100%;
+            overflow-y: scroll;
+        }
+        .chat .chatInput{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            background-color: #fafafa;
+            height:1rem;
+            padding:0.2rem;
+            display:flex;
+            justify-content: space-between;
+        }
+        .chat .chatInput input{
+            height:100%;
+            outline:none;
+            border:none;
+            border:1px solid #ccc;
+            border-radius:4rem;
+            width:4.5rem;
+            text-indent:0.3rem;
+        }
+        .chat .chatInput .expression{
+            display:inline-block;
+            width:0.55rem;
+            height:0.55rem;
+            background: url('../img/xiaolian.png') no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+        .chat .chatInput .send{
+            height:100%;
+            margin-top:0.05rem;
+        }
+        .zq-guest{width: 100%;height: 2.42rem;background: #fafafa;border-bottom: 1px solid #e1e1e1;}
+        .zq-guest .zq-photo{width: 23%;height: 100%;padding: 0.46rem 0 0 0.24rem;}
+        .zq-guest .zq-photo img{width: 83%;height: 50%;border-radius: 50%;}
+        .zq-guest .zq-introduce{width: 70%;height: 100%;padding: 0.52rem 0.2rem 0 0.2rem;}
+        .zq-name{font-weight: bold;color: #333;margin-bottom: 6px;}
+        .zq-title{color: #333;}
+        .zq-link{padding: 0.3rem 0.15rem 0;height: auto;background:#fff;border-radius: 8px;}
+        .zq-link h5{margin-left: -0.2rem;color: #4c5568;margin-bottom: 0.35rem;}
+        .zq-link h5 span{display: inline-block;width: 0.05rem;height: 0.28rem;background: #d13243;vertical-align: middle;margin-right: 0.2rem;margin-left: 0.4rem;}
+        .zq-list{width: 50%;height: 2.5rem;float: left;padding: 0 0.1rem;border-radius: 8px;}
+        .zq-list img{width: 100%;height: 1.7rem;border-radius: 8px;}
+        .zq-list p{margin-top: 0.1rem;font-size: 0.28rem;color: #4c5568;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow:hidden;}
+        .popUp{
+            position:fixed;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background-color: rgba(0,0,0,0.5);
+            z-index:99;
+            width:100%;
+            height:100%;
+        }
+        .popUp .password{
+            position:fixed;
+            top:calc(50% - 1.855rem);
+            width:95%;
+            left:calc(50% - 3.065rem);
+            height:3.71rem;
+            background-color: #fff;
+        }
+        .popUp .password p{
+            height:0.95rem;
+            line-height:0.95rem;
+            text-align:center;
+            font-size: 0.36rem;
+            color:#333;
+            margin-right:0.2rem;
+            margin-left:0.2rem;
+            border-bottom:1px solid #ccc;
+            margin-bottom:0.5rem;
+        }
+        .popUp .password input{
+            display:block;
+            width:5.46rem;
+            margin:0 auto;
+            height:0.6rem;
+            outline: none;
+            border:none;
+            background-color: #fafafa;
+            border:1px solid #e1e1e1;
+            border-radius:0.1rem;
+            font-size: 0.3rem;
+            color:#999;
+            text-indent:0.2rem;
+        }
+        .popUp .password i{
+            display:block;
+            height:0.7rem;
+            line-height:0.7rem;
+            color:red;
+            text-align:center;
+        }
+        .popUp .password span{
+            width:1.5rem;
+            height:0.65rem;
+            display:inline-block;
+            text-align:center;
+            color:white;
+            line-height:0.65rem;
+            border-radius:0.1rem;
+        }
+        .popUp .password .appointment{
+            margin-left:1.02rem;
+            background-color: #514cea;
+        }
+        .popUp .password .cancel{
+            float:right;
+            margin-right:1.02rem;
+            background-color: #b0b0b0;
+        }
+        .h-yuyue{
+            position:absolute;
+            left:25%;
+            top:0.5rem;
+            width:50%;
+            text-align:center;
+            color: #fff;
+        }
+        .h-yuyue p{
+            font-size:0.3rem;
+        }
+        .h-yuyue .leftTime{
+            font-size:0.5rem;
+            margin-top:0.3rem;
+        }
+        .h-yuyue span{
+            font-size:0.25rem;
+            display:inline-block;
+            height:0.6rem;
+            line-height:0.6rem;
+            margin-top:0.3rem;
+            border-radius:0.05rem;
+            width:1.5rem;
+            background-color: #fe6b00;
+            color:white;
+        }
+        .popUp .password.Vcode input{
+            margin-left:0.4rem;
+            width:50%;
+        }
+        #sendCode{
+            background-color: #4d4ce7;
+            float:right;
+            margin-right:0.3rem;
+            width:2rem;
+        }
+        #countDown{
+            background-color: #4d4ce7;
+            float:right;
+            margin-right:0.3rem;
+            width:2rem;
+        }
+        .right-bar{
+            height:0.3rem;
+            width:2px;
+            display:inline-block;
+            background-color:#ccc;
+            position:absolute;
+            right:0;
+            top:calc(50% - 0.12rem);
+        }
+        .hh-guest{
+            padding-top:0.46rem;
+            padding-bottom:0.5rem;
+            padding-left:0.24rem;
+            padding-right:0.24rem;
+            background-color: #f5f5f5;
+           /* border-bottom:1px solid #e1e1e1;*/
+            height:auto;
+
+            overflow:hidden;
+        }
+        .hh-guest img{
+            width:1.3rem;
+            height:1.3rem;
+            border-radius:50%;
+        }
+        .hh-guest .guestinfo{
+            float:right;
+            width:72%;
+            height:100%;
+        }
+        .hh-guest .guestinfo h3{
+            font-size:0.3rem;
+            color:#4c5568;
+            font-weight:bold;
+            margin-bottom:0.2rem;
+        }
+        .hh-guest .guestinfo .normal{
+            height:1rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow:hidden;
+            font-size:0.3rem;
+            color:#4c5568;
+            line-height:0.48rem;
+
+        }
+        .hh-guest .guestinfo .unNormal{
+            font-size:0.3rem;
+            color:#333;
+            line-height:0.48rem;
+            height:auto;
+        }
+        .chat #nickname_dialog{
+            position: fixed;
+            background: rgba(0,0,0,0.9);
+            bottom: 0;
+            color: #FFFFFF;
+            cursor: pointer;
+            line-height: 0.81rem;
+            width: 100%;
+            /*z-index: 1001;*/
+            text-align:center;
+            font-size: 0.28rem;
+            overflow: hidden;
+        }
+        #nickname_dialog > div {
+            height: 0.9rem;
+            background-color: #d13243;
+            color:white;
+            font-size:0.28rem;
+            line-height:0.9rem;
+        }
+        .chat #nickname_dialog .nickname-button{
+            background-color: #fffeb7;
+            border-radius: 2px;
+            cursor: pointer;
+            height: 0.57rem;
+            line-height: 0.57rem;
+            margin-left: 20px;
+            width: 22%;
+            color:#d13243;
+        }
+        #nickname_dialog .nickname {
+            height: 0.57rem;
+            line-height: 0.57rem;
+            text-indent:0.3rem;
+            color:#d13243;
+            border-radius: 4px;
+            width: 45%;
+        }
+        .chat #nickname_dialog .login_discuss{
+            color:white;
+        }
+        .play_btn{
+            position: absolute;
+            left: 41%;
+            top:28%;
+            z-index: 1;
+        }
+        .play_btn img{
+            width: 1.1rem;
+            height: 1.1rem;
+        }
+        .promoteProduct{
+            width:100%;
+            height:0.6rem;
+            background-color: #f5f5f5;
+            text-align: center;
+            line-height:0.6rem;
+            color:#666;
+            display:none;
+        }
+        .closeProduct{
+            position:absolute;
+            right:2px;
+            top:4.2rem;
+            font-size:23px;
+            z-index:99999;
+            display:none;
+        }
+        #close{
+            font-size:30px;
+            color:red;
+            position:absolute;
+            right:0;
+            top:-30px;
+            display:none;
+        }
+        #Interactive{
+            position:absolute;
+            left:0;
+            top:0;
+            bottom:0;
+            right:0;
+            background-color: #fff;
+            z-index:999;
+            padding:0.3rem;
+            font-size:0.35rem;
+        }
+        #Interactive .questionNumber{
+            margin-bottom:0.3rem;
+        }
+        #Interactive .questionNumber .countdown{
+            float:right;
+        }
+        #Interactive .question{
+            background-color: #f5f5f5;
+            margin-bottom:0.2rem;
+        }
+        .answerOne,.answerTwo,.answerThree{
+            margin-bottom:0.2rem;
+            position: relative;
+        }
+        .answerOne span,.answerTwo span,.answerThree span{
+            margin-left:0.5rem;
+        }
+        .weixuanzhong{
+            position: absolute;
+            display: inline-block;
+            width: 0.35rem;
+            top:0.05rem;
+            height: 0.36rem;
+            background: url("../img/weixuanzhong-.png") no-repeat center;
+            background-size: cover;
+        }
+        .xuanzhong{
+            background: url("../img/xuanzhong.png") no-repeat center;
+            background-size: cover;
+        }
+        #correctAnswer{
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-color: rgba(0,0,0,0.5);
+            z-index:1000;
+        }
+        #correctAnswer .correctContent{
+            position:absolute;
+            width:100%;
+            height:3rem;
+            background-color: yellow;
+            top:30%;
+        }
+        #correctAnswer .correctContent p{
+            text-align: center;
+            margin-top:0.6rem;
+            font-size:0.4rem;
+            font-weight:bold;
+        }
+        #correctAnswer .correctContent span{
+            position:absolute;
+            width:1.3rem;
+            height:0.7rem;
+            background-color: #fff;
+            left:calc(50% - 0.65rem);
+            top:2rem;
+            border-radius: 0.2rem;
+            line-height: 0.7rem;
+            text-align: center;
+        }
+        #errorAnswer{
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-color: rgba(0,0,0,0.5);
+            z-index:1000;
+        }
+        #errorAnswer .errorContent{
+            position:absolute;
+            width:100%;
+            height:3rem;
+            background-color: orangered;
+            top:30%;
+            padding:0 0.3rem;
+        }
+        #errorAnswer .errorContent p{
+            text-align: center;
+            margin-top:0.6rem;
+            font-size:0.4rem;
+            font-weight:bold;
+        }
+        #errorAnswer .errorContent span{
+            position:absolute;
+            width:1.3rem;
+            height:0.7rem;
+            background-color: #fff;
+            left:calc(50% - 0.65rem);
+            top:2rem;
+            border-radius: 0.2rem;
+            line-height: 0.7rem;
+            text-align: center;
+        }
+
+
+
