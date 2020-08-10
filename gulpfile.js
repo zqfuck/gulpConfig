@@ -115,11 +115,11 @@ gulp.task('images', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('clean:dist2', function() { //删除之前生成的文件
+gulp.task('clean:dist', function() { //删除之前生成的文件
     return del(['dist']);
 });
 
-gulp.task('clean:dist', function() { //异步清理除dist目录图片以外的文件
+gulp.task('clean:app/dist', function() { //异步清理除dist目录图片以外的文件
     return del(['dist/**/*', '!dist/img', '!dist/img/**/*']);
 });
 
